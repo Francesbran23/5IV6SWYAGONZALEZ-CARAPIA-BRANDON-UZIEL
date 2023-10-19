@@ -94,18 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
         desplazamiento.value = ""; // Restablece el campo de desplazamiento
         clave.value = ""; // Restablece el campo de clave
         cifrado.value = "";
-
-        // Agrega una validación para campos vacíos
-        if (cesarOptions.style.display === "block" && desplazamiento.value === "") {
-            alert("Por favor, ingrese un valor de desplazamiento.");
-            return;
-        }
-
-        if (vigenereOptions.style.display === "block" && clave.value === "") {
-            alert("Por favor, ingrese una clave para Vigenère.");
-            return;
-        }
-    });
 });
 
 function cifrarCesar(texto, desplazamiento) {

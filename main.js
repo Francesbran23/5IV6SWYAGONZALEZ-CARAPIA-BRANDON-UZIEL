@@ -88,8 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         texto.value = textoCifradoValor;
     });
 
-   reiniciarBtn.addEventListener("click", function () {
-        reiniciarBtn.addEventListener("click", function () {
+    reiniciarBtn.addEventListener("click", function () {
         // Restablecer los campos
         texto.value = "";
         desplazamiento.value = ""; // Restablece el campo de desplazamiento

@@ -89,22 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
    reiniciarBtn.addEventListener("click", function () {
+        reiniciarBtn.addEventListener("click", function () {
         // Restablecer los campos
         texto.value = "";
         desplazamiento.value = ""; // Restablece el campo de desplazamiento
         clave.value = ""; // Restablece el campo de clave
         cifrado.value = "";
-
-        // Agrega una validación para campos vacíos
-        if (cesarOptions.style.display === "block" && desplazamiento.value === "") {
-            alert("Ser reiniciara");
-            return;
-        }
-
-        if (vigenereOptions.style.display === "block" && clave.value === "") {
-            alert("Se reiniciara.");
-            return;
-        }
     });
 });
 

@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         if (cesarOptions.style.display === "block") {
-            if (isNaN(valorDesplazamiento)) {
-                alert("Por favor, ingresa un valor de desplazamiento válido.");
+            if (isNaN(valorDesplazamiento) || valorDesplazamiento > 100) {
+                alert("Por favor, ingresa un valor de desplazamiento válido (hasta 100).");
                 return;
             }
             cifrado.value = cifrarCesar(textoIngresado, valorDesplazamiento);
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     
         if (cesarOptions.style.display === "block") {
-            if (isNaN(valorDesplazamiento)) {
-                alert("Por favor, ingresa un valor de desplazamiento válido.");
+            if (isNaN(valorDesplazamiento) || valorDesplazamiento > 100) {
+                alert("Por favor, ingresa un valor de desplazamiento válido (hasta 100) para descifrar.");
                 return;
             }
             cifrado.value = descifrarCesar(textoIngresado, valorDesplazamiento);
